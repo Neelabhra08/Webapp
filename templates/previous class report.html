@@ -1,0 +1,266 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Routine</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  
+  
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.0.4/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link href="{% static 'stylesheet.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+
+      
+      <li class="nav-item dropdown menu-left">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-user"></i>
+          
+        </a>
+        <div class="dropdown-menu dropdown-menu dropdown-menu-right">
+        
+          <div class="dropdown-divider"></div>
+          <a href="my_profile/" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> My Profile
+            </a>
+          <div class="dropdown-divider"></div>
+          <a href="index/" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> Dashboard
+            </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item"> 
+            <i class="fas fa-sign-out-alt mr-2 text-danger"></i> Logout
+          </a>
+          </div>
+      </li>
+      
+    </ul>
+</nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class=" main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="{% static 'images/logo.png' %}"
+           alt="Logo"
+           class="navbar-brand ml-2 mr-4 " height="40px" 
+           >
+           <span class=" font-weight-dark text-center">Neev</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user (optional) -->
+      <div class="user-panel mt-3 ml-0 pb-3 mb-3 d-flex ">
+        <div class="image">
+          <img src="{% static 'images/admin.png' %}" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="my_profile/" class="d-block">Neelabhra Bhattacharyya</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          
+               <ul class="navbar-nav flex-column mt-3">
+                <li class="nav-item"><a href="index/" class="nav-link text-white p-3 mb-1 dash-hover">
+                  <i class="fas fa-home text-light ml-0 mr-4 "></i>Dashboard
+                </a></li>
+                <li class="nav-item"><a href="profile/" class="nav-link text-white p-3 mb-2 sidebar-link " >
+                  <i class="fas fa-user text-light text-center mr-4" ></i>Profile
+                </a></li>
+                <li class="nav-item"><a href="previous_class_report/" class="nav-link text-white p-3 mb-2 sidebar-link">
+                  <i class="fas fa-address-card text-light  ml-0 mr-4 "></i>Prev. Class report
+                </a></li>
+                <li class="nav-item"><a href="my_routine/" class="nav-link text-white p-3 mb-2 sidebar-link">
+                  <i class=" far fa-calendar-alt text-light ml-0  mr-4 "></i>My Routine
+                </a></li>
+                <li class="nav-item"><a href="Homework/" class="nav-link text-white p-3 mb-2 sidebar-link">
+                  <i class="fab fa-autoprefixer text-light ml-0 mr-4 "></i>Homework
+                </a></li>
+                <li class="nav-item"><a href="class_report/" class="nav-link text-white p-3 mb-2 sidebar-link">
+                  <i class="fab fa-audible text-light ml-0 mr-4 "></i>Class Report 
+                </a></li>
+                <li class="nav-item"><a href="talk.html/" class="nav-link text-white p-3 mb-2 sidebar-link">
+                  <i class="fas fa-phone text-light ml-0 mr-4 "></i>Talk
+                </a></li>
+                <li class="nav-item"><a href="test_report/" class="nav-link text-white p-3 mb-2 sidebar-link">
+                  <i class="far fa-calendar-check text-light ml-0 mr-4 "></i>Test Reports
+                </a></li>
+                <li class="nav-item"><a href="my_school_votes/" class="nav-link text-white p-3  sidebar-link" style="margin-bottom: 80px ;">
+                  <i class="fas fa-chalkboard-teacher text-light ml-0 mr-4 "></i>My School Votes
+                </a></li>
+                
+              </ul>
+            </ul>
+      </nav>
+      
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+
+
+
+  <!--body-->
+  <section class="content-body sidebar-open">
+    <div class="clearfix">
+    </div>
+    <div class="container-fluid">
+      <div class="row mb-2">
+          <div class="col-12 mt-2">
+              <h3 >Previous Class Reports: </h3>
+          </div>
+      </div>
+    
+      <div class="row ">
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-header text-center" style="background-color: #4b61aa;">Class 7</div>
+            <div class="card-body">Content</div>
+            <div class="card-footer">Footer</div>  
+          </div>              
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-header text-center" style="background-color: #4b61aa;">Class 8</div>
+            <div class="card-body">Content</div>
+            <div class="card-footer">Footer</div>  
+          </div>              
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-header text-center" style="background-color: #4b61aa;">Class 9</div>
+            <div class="card-body">Content</div>
+            <div class="card-footer">Footer</div>  
+          </div>              
+        </div>
+        <div class="col-sm-4">
+          <div class="card">
+            <div class="card-header text-center" style="background-color: #4b61aa;">Class 10</div>
+            <div class="card-body">Content</div>
+            <div class="card-footer">Footer</div>  
+          </div>     
+                    
+        </div>
+        <div class="col-sm-4">
+          <div class="card" >
+            <div class="card-header text-center" style="background-color: #4b61aa;">Class 11</div>
+            <div class="card-body">Content</div>
+            <div class="card-footer">Footer</div>  
+          </div>     
+                    
+        </div>
+        <div class="col-sm-4">
+          <div class="card " >
+            <div class="card-header text-center" style="background-color: #4b61aa;">Class 12</div>
+            <div class="card-body">Content</div>
+            <div class="card-footer">Footer</div>  
+          </div>     
+                    
+        </div>
+        </div> 
+      
+      <div class="row">
+        <div class="col-md-9">
+          <h3 class="">Class Performance: </h3>
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-12 preformance-container">
+          <table class="table table-striped table-hover mt-2" style="text-align: center;">
+            <thead >
+              <tr>
+                <th></th>
+                <th>Correct Ans(%)</th>
+                <th>Wrong Ans(%)</th>
+                
+                
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Question 1</td>
+                <td>90</td>
+                <td>10</td>
+
+              </tr>
+              <tr>
+                <td>Question 2</td>
+                <td>40</td>
+                <td>60</td>
+              </tr>
+              <tr>
+                <td>Question 3</td>
+                <td>24</td>
+                <td>76</td>
+                
+              </tr>
+              <tr>
+                <td>Question 4</td>
+                <td>80</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Question 5</td>
+                <td>15</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td>Question 6</td>
+                <td>98</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Question 7</td>
+                <td>90</td>
+                <td>10</td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>   
+  </section>
+  <!--end of body-->
+  
+
+   
+        
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.0.4/js/adminlte.min.js"></script>
+
+<script src="{% static 'plugins/demo.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+</body>
+</html>
